@@ -32,27 +32,27 @@ const Footer = () => {
 
           <div className="flex flex-col py-12">
             <div className="flex gap-5 py-2">
-              <img src="/images/span.png" />
+              <Image src="/images/span.png" alt="img" />
               <p className="text-[19px] font-extrabold text-[#FFC247]">
                 iPhone
               </p>
             </div>
             <div className="flex gap-5 py-2">
-              <img src="/images/span.png" />
+              <Image src="/images/span.png" alt="img" />
               <p className="text-[19px] font-extrabold text-[#FFC247]">
                 Android
               </p>
             </div>
             <div className="flex gap-5 py-2">
-              <img src="/images/span.png" />
+              <Image src="/images/span.png" alt="img" />
               <p className="text-[19px] font-extrabold text-[#FFC247]">Help</p>
             </div>
             <div className="flex gap-5 py-2">
-              <img src="/images/span.png" />
+              <Image src="/images/span.png" alt="img" />
               <p className="text-[19px] font-extrabold text-[#FFC247]">About</p>
             </div>
             <div className="flex gap-5 py-2">
-              <img src="/images/span.png" />
+              <Image src="/images/span.png" alt="img" />
               <p className="text-[19px] font-extrabold text-[#FFC247]">
                 Insights
               </p>
@@ -61,26 +61,26 @@ const Footer = () => {
         </div>
         {/* 3 */}
         <div className="bg-[#FFC247] h-auto w-full md:h-[232px] md:w-[436px] p-6 md:p-10 rounded-3xl bg-[url('/images/footercerto.png')] bg-no-repeat bg-cover">
-  <h1 className="text-[18px] md:text-[23px] text-black font-extrabold text-center">
-    Sign up to our newsletter
-  </h1>
-  <p className="text-[14px] md:text-[15px] text-black text-center py-4">
-    Receive the latest mobile security news, exclusive discounts &
-    offers straight to your inbox!
-  </p>
-  <div>
-    <div className="flex flex-col md:flex-row items-center rounded-full max-w-full md:max-w-sm mx-auto md:py-4">
-      <input
-        type="email"
-        placeholder="Email address"
-        className="flex-grow w-full md:w-auto px-4 py-2 md:py-3 text-gray-500 bg-white rounded-t-full md:rounded-l-full md:rounded-t-full md:rounded-tr-none  focus:outline-none"
-      />
-      <button className="bg-black text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-b-full md:rounded-r-full md:rounded-b-none w-full md:w-auto md:mt-0">
-        Submit
-      </button>
-    </div>
-  </div>
-</div>
+          <h1 className="text-[18px] md:text-[23px] text-black font-extrabold text-center">
+            Sign up to our newsletter
+          </h1>
+          <p className="text-[14px] md:text-[15px] text-black text-center py-4">
+            Receive the latest mobile security news, exclusive discounts &
+            offers straight to your inbox!
+          </p>
+          <div>
+            <div className="flex flex-col md:flex-row items-center rounded-full max-w-full md:max-w-sm mx-auto md:py-4">
+              <input
+                type="email"
+                placeholder="Email address"
+                className="flex-grow w-full md:w-auto px-4 py-2 md:py-3 text-gray-500 bg-white rounded-t-full md:rounded-l-full md:rounded-t-full md:rounded-tr-none  focus:outline-none"
+              />
+              <button className="bg-black text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-b-full md:rounded-r-full md:rounded-b-none w-full md:w-auto md:mt-0">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
 
         <div>
           <p className="mt-4 text-[12px] hidden xl:grid grid-cols-1">
