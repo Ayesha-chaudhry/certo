@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface ButtonPropType {
@@ -17,7 +18,7 @@ const Button: React.FC<ButtonPropType> = ({
 }) => {
   return (
     <div
-      className={`w-60 xl:w-80  bg-black flex gap-3 xl:gap-1 rounded-full items-center px-5  h-[40px] mt-9`}
+      className={`w-60 xl:w-70  bg-black flex gap-5 xl:gap-5 rounded-full items-center px-5  h-[40px] mt-9`}
       // bg-['${bgColor}'] border-[${borderColor}]
 
       style={{
@@ -28,7 +29,7 @@ const Button: React.FC<ButtonPropType> = ({
       }}
     >
       <button className="font-extrabold ">{text}</button>
-      {imageSrc && <img src={imageSrc} alt="img" className="w-6 h-3" />}
+      {imageSrc && <Image src={imageSrc} alt="img" width={24} height={12}/>}
     </div>
   );
 };

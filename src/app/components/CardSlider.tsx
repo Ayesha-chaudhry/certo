@@ -1,140 +1,57 @@
 "use client";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
-import { FreeMode, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+import { testimonials } from "@/utils/rawData";
+import TestimonialSlide from "./TestimonialSlide";
 
-export default function projSlider() {
+
+export default function ProjSlider() {
+  const breakpoints = {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 250,
+    },
+  };
+
   return (
-    <>
-      <Swiper
-        slidesPerView={4}
-        spaceBetween={0}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className="mx-5 w-[400px] h-[306px] bg-white rounded-3xl my-12">
-            <div className="flex gap-2 px-12 pt-12">
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-            </div>
-            <p className="text-black text-lg mx-8 py-5">
-              Does exactly what it says. Clear to read and understand. This is
-              now the second iPhone we've used it on and would certainly
-              recommend this app.
-            </p>
-            <h1 className="text-black text-lg mx-8 font-extrabold">
-              Jennifer Black
-            </h1>
-          </div>
+    <Swiper
+      centeredSlides={false}
+      autoplay={{
+        delay: 1500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
+      className="mySwiper"
+      breakpoints={breakpoints}
+    >
+      {testimonials.map((testimonialData, index) => (
+        <SwiperSlide key={index}>
+          <TestimonialSlide
+            imageSrc={testimonialData.imageSrc}
+            altText={testimonialData.altText}
+            testimonial={testimonialData.testimonial}
+            author={testimonialData.author}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="mx-5 w-[400px] h-[306px] bg-white rounded-3xl my-12">
-            <div className="flex gap-2 px-12 pt-12">
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-            </div>
-            <p className="text-black text-lg mx-8 py-5">
-              Does exactly what it says. Clear to read and understand. This is
-              now the second iPhone we've used it on and would certainly
-              recommend this app.
-            </p>
-            <h1 className="text-black text-lg mx-8 font-extrabold">
-              Jennifer Black
-            </h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="mx-5 w-[400px] h-[306px] bg-white rounded-3xl my-12">
-            <div className="flex gap-2 px-12 pt-12">
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-            </div>
-            <p className="text-black text-lg mx-8 py-5">
-              Does exactly what it says. Clear to read and understand. This is
-              now the second iPhone we've used it on and would certainly
-              recommend this app.
-            </p>
-            <h1 className="text-black text-lg mx-8 font-extrabold">
-              Jennifer Black
-            </h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="mx-5 w-[400px] h-[306px] bg-white rounded-3xl my-12">
-            <div className="flex gap-2 px-12 pt-12">
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-            </div>
-            <p className="text-black text-lg mx-8 py-5">
-              Does exactly what it says. Clear to read and understand. This is
-              now the second iPhone we've used it on and would certainly
-              recommend this app.
-            </p>
-            <h1 className="text-black text-lg mx-8 font-extrabold">
-              Jennifer Black
-            </h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="mx-5 w-[400px] h-[306px] bg-white rounded-3xl my-12">
-            <div className="flex gap-2 px-12 pt-12">
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-            </div>
-            <p className="text-black text-lg mx-8 py-5">
-              Does exactly what it says. Clear to read and understand. This is
-              now the second iPhone we've used it on and would certainly
-              recommend this app.
-            </p>
-            <h1 className="text-black text-lg mx-8 font-extrabold">
-              Jennifer Black
-            </h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="mx-5 w-[400px] h-[306px] bg-white rounded-3xl my-12">
-            <div className="flex gap-2 px-12 pt-12">
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-              <img src="/images/svg.png" />
-            </div>
-            <p className="text-black text-lg mx-8 py-5">
-              Does exactly what it says. Clear to read and understand. This is
-              now the second iPhone we've used it on and would certainly
-              recommend this app.
-            </p>
-            <h1 className="text-black text-lg mx-8 font-extrabold">
-              Jennifer Black
-            </h1>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </>
+      ))}
+    </Swiper>
   );
 }
