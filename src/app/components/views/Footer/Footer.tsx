@@ -3,15 +3,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#02033B] p-3 md:p-10 xl:p-20">
+    <div className="bg-[#02033B] p-3 md:p-10 xl:p-20 text-white">
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 md:gap-24">
         {/* 1 */}
         <div className="flex flex-col gap-y-10">
           <h1 className="text-[23px] font-extrabold">Scan.Detect.Remove.</h1>
           <div className="flex gap-7">
-            <Image src="/images/x.png" alt="x" />
-            <Image src="/images/fb.png" alt="fb" />
-            <Image src="/images/utube.png" alt="utube" />
+            <Image src="/images/x.png" alt="x" width={36} height={36} />
+            <Image src="/images/fb.png" alt="fb" width={36} height={36} />
+            <Image src="/images/utube.png" alt="utube" width={36} height={36} />
           </div>
           <div className="flex gap-2">
             <p className="text-[14px] underline">Privacy Policy</p>
@@ -32,27 +32,27 @@ const Footer = () => {
 
           <div className="flex flex-col py-12">
             <div className="flex gap-5 py-2">
-              <Image src="/images/span.png" alt="img" />
+              <Image src="/images/span.png" alt="img" width={20} height={20}/>
               <p className="text-[19px] font-extrabold text-[#FFC247]">
                 iPhone
               </p>
             </div>
             <div className="flex gap-5 py-2">
-              <Image src="/images/span.png" alt="img" />
+              <Image src="/images/span.png" alt="img" width={20} height={20}/>
               <p className="text-[19px] font-extrabold text-[#FFC247]">
                 Android
               </p>
             </div>
             <div className="flex gap-5 py-2">
-              <Image src="/images/span.png" alt="img" />
+              <Image src="/images/span.png" alt="img" width={20} height={20}/>
               <p className="text-[19px] font-extrabold text-[#FFC247]">Help</p>
             </div>
             <div className="flex gap-5 py-2">
-              <Image src="/images/span.png" alt="img" />
+              <Image src="/images/span.png" alt="img" width={20} height={20}/>
               <p className="text-[19px] font-extrabold text-[#FFC247]">About</p>
             </div>
             <div className="flex gap-5 py-2">
-              <Image src="/images/span.png" alt="img" />
+              <Image src="/images/span.png" alt="img" width={20} height={20}/>
               <p className="text-[19px] font-extrabold text-[#FFC247]">
                 Insights
               </p>

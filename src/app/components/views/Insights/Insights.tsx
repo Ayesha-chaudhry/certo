@@ -8,9 +8,9 @@ const Insights = () => {
       <h1 className="text-[56px] font-extrabold text-black text-center">
         Latest insights
       </h1>
-      <div className="md:flex space-x-3 lg:justify-around mx-3 space-y-4 xl:mx-40 mt-8">
+      <div className="md:flex space-x-3 lg:justify-around mx-3 space-y-6 md:space-y-0 xl:mx-40 mt-8">
         {/* 1 */}
-        <div className="w-[300px] h-[534px] bg-white rounded-[48px]">
+        <div className="w-[300px] h-[534px] bg-white rounded-[48px] ">
           <div className="relative">
             <Image
               src="/images/girl.png"

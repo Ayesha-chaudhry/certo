@@ -18,8 +18,8 @@ const Button: React.FC<ButtonPropType> = ({
 }) => {
   return (
     <div
-      className={`w-60 xl:w-70  bg-black flex gap-5 xl:gap-5 rounded-full items-center px-5  h-[40px] mt-9`}
-      // bg-['${bgColor}'] border-[${borderColor}]
+      className={`w-60 xl:w-70  bg-black flex gap-5 xl:gap-5 rounded-full items-center px-5 h-[40px] mt-9`}
+      // bg-[${bgColor}] border-[${borderColor}]
 
       style={{
         color: TextColor,
